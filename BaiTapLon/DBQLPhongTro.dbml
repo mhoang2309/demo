@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PhongTro" Class="DBQLPhongTroDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5MNSNNK\SQLEXPRESS;Initial Catalog=PhongTro;Integrated Security=True" SettingsObjectName="BaiTapLon.Properties.Settings" SettingsPropertyName="PhongTroConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ThongTinThue" Member="ThongTinThues">
+    <Type Name="ThongTinThue">
+      <Column Name="MaThue" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaPhong" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayThue" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTra" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ThongTinPhong_ThongTinThue" Member="ThongTinPhong" ThisKey="MaPhong" OtherKey="MaPhong" Type="ThongTinPhong" IsForeignKey="true" />
+      <Association Name="ThongTinKH_ThongTinThue" Member="ThongTinKH" ThisKey="MaKH" OtherKey="MaKH" Type="ThongTinKH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThongTinPhong" Member="ThongTinPhongs">
+    <Type Name="ThongTinPhong">
+      <Column Name="MaPhong" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DienTich" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="GiaPhong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ChuThich" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="ThongTinPhong_ThongTinThue" Member="ThongTinThues" ThisKey="MaPhong" OtherKey="MaPhong" Type="ThongTinThue" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThongTinKH" Member="ThongTinKHs">
+    <Type Name="ThongTinKH">
+      <Column Name="MaKH" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CMND" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="anh" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="ThongTinKH_ThongTinThue" Member="ThongTinThues" ThisKey="MaKH" OtherKey="MaKH" Type="ThongTinThue" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="uses" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pass" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="quyen" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

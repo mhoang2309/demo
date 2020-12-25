@@ -1,0 +1,13 @@
+D:\baitap\BaiTapLon\BaiTapLon\bin\Release\BaiTapLon.exe.config
+D:\baitap\BaiTapLon\BaiTapLon\bin\Release\BaiTapLon.exe
+D:\baitap\BaiTapLon\BaiTapLon\bin\Release\BaiTapLon.pdb
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.csprojAssemblyReference.cache
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.frmLogin.resources
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.frmMain.resources
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.frmThongTinKH.resources
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.frmThongTinPhongTro.resources
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.Properties.Resources.resources
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.csproj.GenerateResource.cache
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.csproj.CoreCompileInputs.cache
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.exe
+D:\baitap\BaiTapLon\BaiTapLon\obj\Release\BaiTapLon.pdb

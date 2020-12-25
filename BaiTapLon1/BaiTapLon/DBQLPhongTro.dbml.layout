@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBQLPhongTro">
+  <DataContextMoniker Name="/DBQLPhongTroDataContext" />
+  <nestedChildShapes>
+    <classShape Id="841cc1a0-4ac6-4961-99d2-21065cb0efe9" absoluteBounds="5.5, 0.5, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/DBQLPhongTroDataContext/ThongTinThue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8997a11d-0ddb-41e6-bbb4-1f22b70eaceb" absoluteBounds="5.5150000000000006, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86f27f19-a167-41d6-8734-3ca7338ecada" absoluteBounds="2.75, 0.625, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/DBQLPhongTroDataContext/ThongTinPhong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c871021f-c27a-4509-a7fb-87f05d534fa9" absoluteBounds="2.765, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0fe5eba-30df-4cc7-9a7f-22d0e3cbde6b" absoluteBounds="2.75, 4.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBQLPhongTroDataContext/ThongTinKH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2320675c-b07f-45bb-842c-f1939c1ec1c0" absoluteBounds="2.765, 4.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a00344c-4d32-40e5-9805-cc036352a144" absoluteBounds="5.75, 3.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBQLPhongTroDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="834bf5c5-c23b-47f9-8dbc-0099be676d8b" absoluteBounds="5.7650000000000006, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.75 : 1.41429768880208); (5.5 : 1.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBQLPhongTroDataContext/ThongTinPhong/ThongTinPhong_ThongTinThue" />
+      <nodes>
+        <classShapeMoniker Id="86f27f19-a167-41d6-8734-3ca7338ecada" />
+        <classShapeMoniker Id="841cc1a0-4ac6-4961-99d2-21065cb0efe9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.75 : 5.67714680989583); (5.59375 : 5.67714680989583); (5.59375 : 2.27089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBQLPhongTroDataContext/ThongTinKH/ThongTinKH_ThongTinThue" />
+      <nodes>
+        <classShapeMoniker Id="f0fe5eba-30df-4cc7-9a7f-22d0e3cbde6b" />
+        <classShapeMoniker Id="841cc1a0-4ac6-4961-99d2-21065cb0efe9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
